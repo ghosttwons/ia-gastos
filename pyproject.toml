@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ia-gastos"
+version = "0.1.0"
+description = "IA ligera para seguimiento de gastos y recordatorios de pagos"
+authors = [{name = "Dylan Schleswig"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "click>=8",
+  "python-dateutil>=2.8",
+]
+
+[project.scripts]
+ia-gastos = "ia_gastos.cli:main"
